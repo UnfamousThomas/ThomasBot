@@ -8,10 +8,15 @@ import net.dv8tion.jda.core.hooks.ListenerAdapter;
 public class Commands extends ListenerAdapter {
     public void command(MessageReceivedEvent e) {
         Message message = e.getMessage();
+        System.out.println("hihihi");
         if(message.getContentRaw().startsWith("!")) {
-            String[] args = message.getContentRaw().replaceFirst("!", " ").split(" ");
+            e.getChannel().sendMessage("THIS WORKS!");
+            System.out.println("hih2ihi");
+            String[] args = message.getContentRaw().replaceFirst("!", "").split(" ");
             switch (args[0]) {
                 case "help":
+                    e.getChannel().sendMessage("THIS WORKS!");
+                    System.out.println("hihihi3");
                     help.run(e.getMessage());
                     break;
             }
