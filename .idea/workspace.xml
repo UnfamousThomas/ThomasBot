@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42c51ae-b5f7-470a-b8c2-ea46e1246f50" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WeGameBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeGameBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/help.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/help.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/onGuildMessageReceived.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/onMessageReceived.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/WeGameBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WeGameBot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/help.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/events/onGuildMessageReceived.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,23 +68,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="870" />
+          <entry key="dummy" value="17" />
+          <entry key="java" value="1026" />
           <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="870" />
+          <entry key="JAVA" value="1026" />
+          <entry key="PLAIN_TEXT" value="17" />
           <entry key="XML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="class" value="1" />
           <entry key="java" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+          <entry key="CLASS" value="1" />
           <entry key="JAVA" value="2" />
         </counts>
       </usages-collector>
@@ -118,7 +125,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -130,11 +137,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/events/help.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/events/onMessageReceived.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
+            <state relative-caret-position="289">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,6 +171,8 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/help.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/help.java" />
         <option value="$PROJECT_DIR$/src/main/java/WeGameBot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/events/onGuildMessageReceived.java" />
+        <option value="$PROJECT_DIR$/src/main/java/events/onMessageReceived.java" />
       </list>
     </option>
   </component>
@@ -196,7 +205,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="833" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
@@ -251,7 +260,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539984377511" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539985219434" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -302,12 +311,12 @@
       <workItem from="1539934657391" duration="1112000" />
       <workItem from="1539935988466" duration="794000" />
       <workItem from="1539953692233" duration="1215000" />
-      <workItem from="1539974041832" duration="4254000" />
+      <workItem from="1539974041832" duration="5166000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10007000" />
+    <option name="totallyTimeSpent" value="10919000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -322,7 +331,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32796317" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32796317" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -341,7 +350,7 @@
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.5654912" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.5654034" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,13 +388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/events/help.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/net/dv8tion/JDA/3.8.1_438/JDA-3.8.1_438.jar!/net/dv8tion/jda/core/hooks/ListenerAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-12569">
+          <caret line="275" column="16" selection-start-line="275" selection-start-column="16" selection-end-line="275" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -393,6 +399,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/events/onMessageReceived.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
