@@ -1,19 +1,17 @@
-package events;
+package events.commands;
 
 import net.dv8tion.jda.core.OnlineStatus;
-import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.MessageChannel;
 import net.dv8tion.jda.core.entities.User;
-import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import events.settings;
 public class onlineCommand extends ListenerAdapter {
     @Override
-    public void onMessageReceived(MessageReceivedEvent e) {
+    public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
         User author = e.getAuthor();
         String name = author.getName();
         boolean bot = author.isBot();
-        Message msg = e.getMessage();
         MessageChannel channel = e.getChannel();
 
         String[] args = e.getMessage().getContentRaw().split(" ");
