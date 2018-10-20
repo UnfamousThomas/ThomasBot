@@ -36,7 +36,7 @@ public class muteCommand extends ListenerAdapter {
                     if(args.length >= 3){
                         String reason = "";
                         for (int i = 2; i < args.length; i++) {
-                            reason += args[1] + " ";
+                            reason += args[i] + " ";
                         }  log(target,e.getMember(), reason, e.getGuild().getTextChannelById("503160801880702989"));
                     } else {
                         log(target, e.getMember(),"", e.getGuild().getTextChannelById("503160801880702989"));
