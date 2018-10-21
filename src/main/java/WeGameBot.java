@@ -1,3 +1,4 @@
+import events.commands.clearCommand;
 import events.commands.muteCommand;
 import events.commands.onlineCommand;
 import events.commands.pingCommand;
@@ -15,6 +16,7 @@ public class WeGameBot {
                     .addEventListener(new pingCommand())
                     .addEventListener(new onlineCommand())
                     .addEventListener(new muteCommand())
+                    .addEventListener(new clearCommand())
                     .build();
         } catch (Exception e) {
             e.printStackTrace();
