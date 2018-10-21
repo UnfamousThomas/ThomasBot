@@ -30,7 +30,7 @@ public class clearCommand extends ListenerAdapter {
                 msg.delete().queue();
                 TextChannel target = e.getMessage().getMentionedChannels().get(0);
                 purgeMessages(target, Integer.parseInt(args[2]));
-                if(args.length < 3) {
+                if(args.length > 3) {
                     String reason = "";
                     for (int i = 3; i < args.length; i++) {
                         reason += args[i] + " ";
