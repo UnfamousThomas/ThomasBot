@@ -1,7 +1,4 @@
-import events.commands.clearCommand;
-import events.commands.muteCommand;
-import events.commands.onlineCommand;
-import events.commands.pingCommand;
+import events.commands.*;
 import events.settings;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
@@ -17,6 +14,7 @@ public class WeGameBot {
                     .addEventListener(new onlineCommand())
                     .addEventListener(new muteCommand())
                     .addEventListener(new clearCommand())
+                    .addEventListener(new announceCommand())
                     .build();
         } catch (Exception e) {
             e.printStackTrace();
