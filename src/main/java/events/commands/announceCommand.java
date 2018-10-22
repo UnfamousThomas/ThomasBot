@@ -27,6 +27,7 @@ public class announceCommand extends ListenerAdapter {
                     for (int i = 1; i < args.length; i++) {
                         reason += args[i] + " ";
                     }
+                        e.getMessage().delete().queue();
                         sendAnnouncement(reason, e.getMember(), e.getGuild().getTextChannelById("503660393894379521"));
                 }
             }

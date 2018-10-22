@@ -25,6 +25,7 @@ public class clearCommand extends ListenerAdapter {
             Member m = e.getMember();
             boolean isbot = author.isBot();
             if (args.length <= 2) {
+                msg.delete().queue();
                 sendErrorMessage(channel, m);
             } else {
                 msg.delete().queue();
@@ -56,7 +57,7 @@ public class clearCommand extends ListenerAdapter {
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");
         Date date = new Date(System.currentTimeMillis());
         EmbedBuilder builder = new EmbedBuilder();
-        builder.setTitle("Mute report");
+        builder.setTitle("Clear report");
         builder.setColor(Color.decode("#e84118"));
         builder.addField("Cleared Channel", cleared.getAsMention(), false);
         builder.addField("Number of messages cleared", num, false);
