@@ -20,7 +20,7 @@ public class warnCommand extends ListenerAdapter {
         String args[] = e.getMessage().getContentRaw().split(" ");
         if (args[0].equalsIgnoreCase(settings.prefix + "warn")) {
             if (args.length >= 3) {
-                Member target = e.getMessage().getMentionedMembers().get(2); //Getting an error here, will look into later?
+                Member target = e.getMessage().getMentionedMembers().get(0); //Getting an error here, will look into later?
                 String reason = "";
                 for (int i = 2; i < args.length; i++) {
                     reason += args[i] + " ";
@@ -29,7 +29,9 @@ public class warnCommand extends ListenerAdapter {
                 String finalReason = reason;
                 u.openPrivateChannel().queue(channel -> {
                     channel.sendMessage("You have been warned. The reason for this is: ").queue();
-                    channel.sendMessage(finalReason);
+                    channel.sendMessage(finalReason).queue();
+                    channel.sendMessage("You were warned by: ").queue();
+                    channel.sendMessage(e.getAuthor().getName()).queue();
                 });
 
 
@@ -54,8 +56,8 @@ public class warnCommand extends ListenerAdapter {
         EmbedBuilder builder = new EmbedBuilder();
         builder.setTitle("Warn report");
         builder.setColor(Color.decode("#e84118"));
-        builder.addField("Muted User", warned.getAsMention(), false);
-        builder.addField("Muter/Moderator", warner.getAsMention(), false);
+        builder.addField("Warned User", warned.getAsMention(), false);
+        builder.addField("Warner/Moderator", warner.getAsMention(), false);
         builder.addField("Reason", reason, false);
         builder.addField("Date", sdf.format(date), false);
         builder.addField("Time", stf.format(date), false);

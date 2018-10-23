@@ -29,7 +29,7 @@ public class muteCommand extends ListenerAdapter {
                 sendErrorMessage(cha, e.getMember());
                 } else {
                     Member target = msg.getMentionedMembers().get(0);
-                    Role muted = e.getGuild().getRolesByName("Muted", true).get(0);
+                    Role muted = e.getGuild().getRoleById("503936463319072780");
 
                     e.getGuild().getController().addSingleRoleToMember(target, muted).queue();
                     e.getGuild().getController().removeSingleRoleFromMember(target, muted).queueAfter(1, TimeUnit.DAYS);
