@@ -28,10 +28,7 @@ public class warnCommand extends ListenerAdapter {
                 User u = target.getUser();
                 String finalReason = reason;
                 u.openPrivateChannel().queue(channel -> {
-                    channel.sendMessage("You have been warned. The reason for this is: ").queue();
-                    channel.sendMessage(finalReason).queue();
-                    channel.sendMessage("You were warned by: ").queue();
-                    channel.sendMessage(e.getAuthor().getName()).queue();
+                    DMlog(target, finalReason, channel);
                 });
 
 
@@ -64,15 +61,14 @@ public class warnCommand extends ListenerAdapter {
         channel.sendMessage(builder.build()).queue();
 
     }
-    public void DMlog(Member warned, Member warner, String reason, PrivateChannel channel) {
+    public void DMlog(Member warned, String reason, PrivateChannel channel) {
         SimpleDateFormat sdf = new SimpleDateFormat("MM/d/yyyy");
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");
         Date date = new Date(System.currentTimeMillis());
         EmbedBuilder builder = new EmbedBuilder();
-        builder.setTitle("Warn report");
+        builder.setTitle("You have been warned. Here is some info about your warning:");
         builder.setColor(Color.decode("#e84118"));
-        builder.addField("Muted User", warned.getAsMention(), false);
-        builder.addField("Muter/Moderator", warner.getAsMention(), false);
+        builder.addField("Warned User", warned.getAsMention(), false);
         builder.addField("Reason", reason, false);
         builder.addField("Date", sdf.format(date), false);
         builder.addField("Time", stf.format(date), false);
