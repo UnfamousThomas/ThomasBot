@@ -36,9 +36,9 @@ public class clearCommand extends ListenerAdapter {
                     for (int i = 3; i < args.length; i++) {
                         reason += args[i] + " ";
                     }
-                    log(m, args[2], reason, e.getGuild().getTextChannelById("503160801880702989"), target);
+                    log(m, args[2], reason, e.getGuild().getTextChannelById("503937433856114709"), target);
                 } else {
-                    log(m, args[2], "", e.getGuild().getTextChannelById("503160801880702989"), target);
+                    log(m, args[2], "", e.getGuild().getTextChannelById("503937433856114709"), target);
                 }
 
         }

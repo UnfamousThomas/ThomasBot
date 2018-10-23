@@ -8,6 +8,9 @@ public class onReaction extends ListenerAdapter {
     public void onMessageReactionAdd(MessageReactionAddEvent e) {
         if(e.getReactionEmote().getName().equals("\u1f600")) {
             e.getChannel().sendMessage("GRINNING!!!!").queue();
+            //yup it hates me
+                //Y, I do not know?
+            //SEND HELP
         }
     }
 }

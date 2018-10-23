@@ -1,7 +1,7 @@
 package events;
 
 public class settings {
-    public static String prefix = "!";
-    public static String token= "NDk4NTc3ODM1ODA0MzI3OTcy.Dp_MSQ.gK-2LnlRja6CU0FF1jKp92Ku5Z0";
+    public static String prefix = ".";
+    public static String token= "NTAzOTM4MDQ4OTg0MzUwNzQx.Dq9xQw.JbuStJtSrA4gZfQIzHqpNLkPPD4";
 
 }

@@ -1,5 +1,6 @@
 package events.commands;
 
+import events.settings;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
@@ -12,7 +13,7 @@ public class pingCommand extends ListenerAdapter {
         Message msg = e.getMessage();
 
         if (author.isBot()) { return; }
-        else if(msg.getContentRaw().equalsIgnoreCase("!ping")) {
+        else if(msg.getContentRaw().equalsIgnoreCase(settings.prefix + "ping")) {
             channel.sendMessage(author.getAsMention() + " Pong!").queue();
         }
 

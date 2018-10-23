@@ -2,14 +2,11 @@ package events.commands;
 
 import events.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
-import net.dv8tion.jda.core.entities.Channel;
 import net.dv8tion.jda.core.entities.Member;
-import net.dv8tion.jda.core.entities.Message;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 
-import javax.xml.bind.Marshaller;
 import java.awt.*;
 import java.util.concurrent.TimeUnit;
 
@@ -21,6 +18,7 @@ public class announceCommand extends ListenerAdapter {
             if (!e.getAuthor().isBot()) {
                 if(args.length < 2) {
                     sendErrorMessage(e.getTextChannel(), e.getMember());
+                    e.getMessage().delete().queueAfter(15, TimeUnit.SECONDS);
                 } else if(args.length >= 2) {
                     Member m = e.getMember();
                     String reason = "";
@@ -28,7 +26,7 @@ public class announceCommand extends ListenerAdapter {
                         reason += args[i] + " ";
                     }
                         e.getMessage().delete().queue();
-                        sendAnnouncement(reason, e.getMember(), e.getGuild().getTextChannelById("503660393894379521"));
+                        sendAnnouncement(reason, e.getMember(), e.getGuild().getTextChannelById("503935759246557205"));
                 }
             }
         }

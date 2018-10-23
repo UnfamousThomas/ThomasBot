@@ -18,6 +18,9 @@ public class WeGameBot {
                     .addEventListener(new clearCommand())
                     .addEventListener(new announceCommand())
                     .addEventListener(new onReaction())
+                    .addEventListener(new warnCommand())
+
+
                     .setStatus(OnlineStatus.DO_NOT_DISTURB)
                     .build();
         } catch (Exception e) {

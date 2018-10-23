@@ -38,10 +38,10 @@ public class muteCommand extends ListenerAdapter {
                         String reason = "";
                         for (int i = 2; i < args.length; i++) {
                             reason += args[i] + " ";
-                        }  log(target,e.getMember(), reason, e.getGuild().getTextChannelById("503160801880702989"));
+                        }  log(target,e.getMember(), reason, e.getGuild().getTextChannelById("503937433856114709"));
                         msg.delete().queue();
                     } else {
-                        log(target, e.getMember(),"", e.getGuild().getTextChannelById("503160801880702989"));
+                        log(target, e.getMember(),"", e.getGuild().getTextChannelById("503937433856114709"));
                         msg.delete().queue();
                     }
                 }
