@@ -23,7 +23,7 @@ public class onlineCommand extends ListenerAdapter {
                         online++;
                     }
                 }
-                channel.sendMessage("There are: " + online + " members online. There are " + e.getGuild().getMembers().size() + " members in this discord server.").queue();
+                channel.sendMessage("There are: " + (online -1 ) + " members online. There are " + (e.getGuild().getMembers().size() -1) + " members in this discord server.").queue();
                 } else channel.sendMessage(name + " is a bot! Will not respond.").queue();
             }
 
