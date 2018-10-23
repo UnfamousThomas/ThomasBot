@@ -2,6 +2,7 @@ package events.commands;
 
 import events.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
@@ -24,10 +25,10 @@ public class clearCommand extends ListenerAdapter {
             TextChannel channel = e.getChannel();
             Member m = e.getMember();
             boolean isbot = author.isBot();
-            if (args.length <= 2) {
+            if (args.length <= 2 && e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 msg.delete().queue();
                 sendErrorMessage(channel, m);
-            } else {
+            } else if(e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 msg.delete().queue();
                 TextChannel target = e.getMessage().getMentionedChannels().get(0);
                 purgeMessages(target, Integer.parseInt(args[2]));

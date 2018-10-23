@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42c51ae-b5f7-470a-b8c2-ea46e1246f50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/WeGameBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeGameBot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/muteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/commands/muteCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/warnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/commands/warnCommand.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -66,13 +70,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="28" />
-          <entry key="java" value="8050" />
+          <entry key="java" value="8269" />
           <entry key="xml" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8050" />
+          <entry key="JAVA" value="8269" />
           <entry key="PLAIN_TEXT" value="28" />
           <entry key="XML" value="10" />
         </counts>
@@ -116,8 +120,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
+            <state relative-caret-position="374">
+              <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/muteCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+            <state relative-caret-position="219">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,11 +153,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+            <state relative-caret-position="442">
+              <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,8 +168,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
+            <state relative-caret-position="255">
+              <caret line="30" column="78" lean-forward="true" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,11 +210,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/warnCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+            <state relative-caret-position="321">
+              <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -236,6 +243,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>reason</find>
+      <find>admi</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -257,14 +265,14 @@
         <option value="$PROJECT_DIR$/src/main/java/events/commands/onlineCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/triviaCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/onReaction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/settings.java" />
-        <option value="$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/pingCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/warn.java" />
         <option value="$PROJECT_DIR$/src/main/java/WeGameBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/muteCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/warnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java" />
       </list>
     </option>
   </component>
@@ -361,7 +369,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540289921705" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540290675705" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -425,18 +433,18 @@
       <workItem from="1540196735458" duration="522000" />
       <workItem from="1540198792636" duration="912000" />
       <workItem from="1540209396916" duration="8384000" />
-      <workItem from="1540282317427" duration="4775000" />
+      <workItem from="1540282317427" duration="5509000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42656000" />
+    <option name="totallyTimeSpent" value="43390000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20415647" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20415647" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -445,7 +453,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49816626" visible="true" weight="0.32451093" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49816626" visible="true" weight="0.32451093" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -552,16 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="38" column="95" selection-start-line="38" selection-start-column="95" selection-end-line="38" selection-end-column="95" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/pingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -588,15 +586,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="25" lean-forward="true" selection-start-column="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
+        <state relative-caret-position="374">
+          <caret line="23" column="77" selection-start-line="23" selection-start-column="77" selection-end-line="23" selection-end-column="77" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -605,8 +596,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/muteCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+        <state relative-caret-position="219">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="30" column="78" lean-forward="true" selection-start-line="30" selection-start-column="78" selection-end-line="30" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -615,8 +616,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/warnCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="70" column="32" selection-start-line="70" selection-start-column="32" selection-end-line="70" selection-end-column="32" />
+        <state relative-caret-position="321">
+          <caret line="22" column="35" lean-forward="true" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="51" column="10" selection-start-line="51" selection-start-column="10" selection-end-line="51" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

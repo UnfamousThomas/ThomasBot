@@ -2,6 +2,7 @@ package events.commands;
 
 import events.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.PrivateChannel;
 import net.dv8tion.jda.core.entities.TextChannel;
@@ -18,7 +19,7 @@ public class warnCommand extends ListenerAdapter {
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
         String args[] = e.getMessage().getContentRaw().split(" ");
-        if (args[0].equalsIgnoreCase(settings.prefix + "warn")) {
+        if (args[0].equalsIgnoreCase(settings.prefix + "warn") && e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
             if (args.length >= 3) {
                 Member target = e.getMessage().getMentionedMembers().get(0); //Getting an error here, will look into later?
                 String reason = "";

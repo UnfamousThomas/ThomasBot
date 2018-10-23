@@ -2,6 +2,7 @@ package events.commands;
 
 import events.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
@@ -24,7 +25,7 @@ public class muteCommand extends ListenerAdapter {
             TextChannel cha = e.getChannel();
 
 
-            if (!isbot) {
+            if (!isbot && e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 if (args.length <= 1) {
                 sendErrorMessage(cha, e.getMember());
                 } else {

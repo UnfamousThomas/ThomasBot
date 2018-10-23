@@ -2,6 +2,7 @@ package events.commands;
 
 import events.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
+import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
@@ -15,7 +16,7 @@ public class announceCommand extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent e) {
         String[] args = e.getMessage().getContentRaw().split(" ");
         if (args[0].equalsIgnoreCase(settings.prefix + "announce")) {
-            if (!e.getAuthor().isBot()) {
+            if (!e.getAuthor().isBot() && e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 if(args.length < 2) {
                     sendErrorMessage(e.getTextChannel(), e.getMember());
                     e.getMessage().delete().queueAfter(15, TimeUnit.SECONDS);

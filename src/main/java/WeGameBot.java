@@ -5,6 +5,7 @@ import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
+import net.dv8tion.jda.core.entities.Game;
 
 
 public class WeGameBot {
@@ -20,7 +21,7 @@ public class WeGameBot {
                     .addEventListener(new onReaction())
                     .addEventListener(new warnCommand())
 
-
+                    .setGame(Game.watching("Thomas play games on his discord!"))
                     .setStatus(OnlineStatus.DO_NOT_DISTURB)
                     .build();
         } catch (Exception e) {
