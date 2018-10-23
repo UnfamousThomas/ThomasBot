@@ -39,7 +39,7 @@ public class announceCommand extends ListenerAdapter {
         builder.setAuthor(member.getUser().getName(), member.getUser().getAvatarUrl(), member.getUser().getAvatarUrl());
         builder.setColor(Color.decode("#e84118"));
         builder.setDescription("[] - Required, {} - Optional");
-        builder.addField("Proper usage: !announce [MESSAGE]", "", false);
+        builder.addField("Proper usage: .announce [MESSAGE]", "", false);
         channel.sendMessage(builder.build()).complete().delete().queueAfter(30, TimeUnit.SECONDS);
     }
     public void sendAnnouncement(String msg, Member m, TextChannel c) {
