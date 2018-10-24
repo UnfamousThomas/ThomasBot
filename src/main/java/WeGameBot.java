@@ -1,7 +1,6 @@
 import events.commands.*;
 import events.onJoinEvent;
 import events.onMsgEdit;
-import events.onReaction;
 import events.settings;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
@@ -20,13 +19,13 @@ public class WeGameBot {
                     .addEventListener(new muteCommand())
                     .addEventListener(new clearCommand())
                     .addEventListener(new announceCommand())
-                    .addEventListener(new onReaction())
                     .addEventListener(new warnCommand())
                     .addEventListener(new onJoinEvent())
                     .addEventListener(new banCommand())
                     .addEventListener(new unbanCommand())
                     .addEventListener(new kickCommand())
                     .addEventListener(new onMsgEdit())
+                    .addEventListener(new suggest())
 
                     .setGame(Game.watching("Thomas play games on his discord!"))
                     .setStatus(OnlineStatus.DO_NOT_DISTURB)
