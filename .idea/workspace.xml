@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42c51ae-b5f7-470a-b8c2-ea46e1246f50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WeGameBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeGameBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/WIP/infoCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/database.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WeGameBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WeGameBot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/WIP/infoCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/WIP/suggest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/communication/suggest.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -94,7 +88,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
-          <entry key="java" value="19577" />
+          <entry key="java" value="19625" />
           <entry key="sql" value="26" />
           <entry key="txt" value="10" />
           <entry key="xml" value="31" />
@@ -102,7 +96,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="19577" />
+          <entry key="JAVA" value="19625" />
           <entry key="PLAIN_TEXT" value="51" />
           <entry key="Scratch" value="26" />
           <entry key="XML" value="31" />
@@ -111,7 +105,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="56" />
+          <entry key="java" value="59" />
           <entry key="sql" value="3" />
           <entry key="xml" value="2" />
         </counts>
@@ -119,7 +113,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="56" />
+          <entry key="JAVA" value="59" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -151,7 +145,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
+            <state relative-caret-position="515">
               <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -170,6 +164,15 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb8b7830-0433-417a-a621-a9ea7411919c/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -178,11 +181,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-340">
-              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+            <state relative-caret-position="527">
+              <caret line="55" column="28" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -193,7 +196,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="243">
               <caret line="21" column="50" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="21" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -202,7 +205,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/events/onJoinEvent.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
@@ -215,6 +218,24 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/events/onMsgEdit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-307">
@@ -222,15 +243,6 @@
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -296,10 +308,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb8b7830-0433-417a-a621-a9ea7411919c/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" />
         <option value="$PROJECT_DIR$/src/main/java/WeGameBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/settings.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java" />
       </list>
     </option>
   </component>
@@ -337,7 +351,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
@@ -435,7 +449,7 @@
     <property name="LombokPluginIS_VAL_Enabled" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540483891058" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540484367889" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -514,18 +528,18 @@
       <workItem from="1540457918602" duration="192000" />
       <workItem from="1540458136931" duration="1587000" />
       <workItem from="1540461729578" duration="1683000" />
-      <workItem from="1540464087283" duration="14336000" />
+      <workItem from="1540464087283" duration="15113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="91788000" />
+    <option name="totallyTimeSpent" value="92565000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3294621" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3294621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -534,8 +548,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" weight="0.3256617" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.33488372" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49633253" visible="true" weight="0.31990793" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.33486766" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49633253" visible="true" weight="0.31990793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -616,13 +630,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onMsgDelete.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onReaction.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onsomething.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/events/onMsgEdit.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/banCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -670,20 +677,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -758,8 +751,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
+        <state relative-caret-position="515">
           <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/events/onMsgEdit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/events/onJoinEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -773,9 +790,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="243">
           <caret line="21" column="50" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="21" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -783,20 +807,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/events/onJoinEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="527">
+          <caret line="55" column="28" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

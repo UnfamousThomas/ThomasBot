@@ -1,5 +1,5 @@
 import commands.Administration.*;
-import commands.communication.suggest;
+import commands.communication.suggestCommand;
 import commands.info.helpCommand;
 import commands.info.onlineCommand;
 import commands.info.pingCommand;
@@ -29,7 +29,7 @@ public class WeGameBot {
                     .addEventListener(new unbanCommand())
                     .addEventListener(new kickCommand())
                     .addEventListener(new onMsgEdit())
-                    .addEventListener(new suggest())
+                    .addEventListener(new suggestCommand())
                     .addEventListener(new helpCommand())
 
                     .setGame(Game.watching("Thomas play games on his discord!"))

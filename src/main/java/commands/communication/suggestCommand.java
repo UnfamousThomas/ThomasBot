@@ -16,7 +16,7 @@ import static utils.settings.user;
 import static utils.settings.pass;
 
 
-public class suggest extends ListenerAdapter {
+public class suggestCommand extends ListenerAdapter {
 
 
     @Override
@@ -33,16 +33,13 @@ public class suggest extends ListenerAdapter {
                     if (existsID.next()) {
                         String hassu = "SELECT * FROM suggestions WHERE Suggestion='1'";
                         ResultSet existhas = stat.executeQuery(hassu);
-                        System.out.println("YAY!");
                         if (existhas.next()) {
-                            System.out.println("yay2!");
                             e.getChannel().sendMessage("You already have a suggestion's channel. You can only have one!").queue();
                         }
                     } else {
                         e.getGuild().getController().createTextChannel("suggestions3-" + e.getAuthor().getName()).queue();
                         e.getChannel().sendMessage("Channel created. Look for a channel with your name.").queue();
                         Connection mycon = DriverManager.getConnection(dbUrl, user, pass);
-
                         Statement st = mycon.createStatement();
                         String rowsAffected = "INSERT INTO suggestions (UserID, Suggestion)" +
                                 "VALUES (" + e.getAuthor().getId() + ", 1)";
@@ -55,7 +52,7 @@ public class suggest extends ListenerAdapter {
 
             }
         }
-        if (args.length > 1 || args.length < 1) {
+        if (args.length != 1) {
             sendErrorMessage(e.getTextChannel(), e.getMember());
         }
     }

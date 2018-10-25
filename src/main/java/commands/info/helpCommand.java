@@ -33,7 +33,7 @@ public class helpCommand extends ListenerAdapter {
         builder.addField(settings.prefix + "ping","Pong!" , false);
         builder.addField(settings.prefix + "help", "Sends this.", false);
         builder.addField("Communication:","", false);
-        builder.addField(settings.prefix + "suggest", "Opens a channel for suggestions.", false);
+        builder.addField(settings.prefix + "suggestCommand", "Opens a channel for suggestions.", false);
         builder.addField("Administration/Moderation:","", false);
         builder.addField(settings.prefix + "announce","Sends a message in announcements.", false);
         builder.addField(settings.prefix + "ban","Ban's someone.", false);
