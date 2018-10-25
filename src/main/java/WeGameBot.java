@@ -1,12 +1,20 @@
-import events.commands.*;
+import commands.Administration.*;
+import commands.WIP.suggest;
+import commands.info.onlineCommand;
+import commands.info.pingCommand;
 import events.onJoinEvent;
 import events.onMsgEdit;
-import events.settings;
+import utils.settings;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.Statement;
 
 
 public class WeGameBot {
@@ -33,5 +41,7 @@ public class WeGameBot {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
+
     }
 }
