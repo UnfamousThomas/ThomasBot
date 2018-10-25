@@ -1,3 +1,5 @@
+
+
 import commands.Administration.*;
 import commands.communication.suggestCommand;
 import commands.info.helpCommand;
@@ -5,15 +7,16 @@ import commands.info.onlineCommand;
 import commands.info.pingCommand;
 import events.onJoinEvent;
 import events.onMsgEdit;
-import utils.settings;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
 import net.dv8tion.jda.core.OnlineStatus;
 import net.dv8tion.jda.core.entities.Game;
+import utils.settings;
 
 
 public class WeGameBot {
+
     public static void main(String[] args) {
         try {
             JDA jda = new JDABuilder(AccountType.BOT)
@@ -38,7 +41,6 @@ public class WeGameBot {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
     }
 }

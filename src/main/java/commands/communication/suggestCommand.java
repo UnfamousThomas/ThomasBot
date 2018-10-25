@@ -23,6 +23,7 @@ public class suggestCommand extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent e) {
         String[] args = e.getMessage().getContentRaw().split(" ");
         String dcuser = e.getAuthor().getName();
+        boolean gay = false;
         if (args.length == 1) {
             if (args[0].equalsIgnoreCase(settings.prefix + "suggest")) {
                 try {
@@ -37,7 +38,7 @@ public class suggestCommand extends ListenerAdapter {
                             e.getChannel().sendMessage("You already have a suggestion's channel. You can only have one!").queue();
                         }
                     } else {
-                        e.getGuild().getController().createTextChannel("suggestions3-" + e.getAuthor().getName()).queue();
+                        e.getGuild().getController().createTextChannel("suggestions-" + e.getAuthor().getName()).queue();
                         e.getChannel().sendMessage("Channel created. Look for a channel with your name.").queue();
                         Connection mycon = DriverManager.getConnection(dbUrl, user, pass);
                         Statement st = mycon.createStatement();
@@ -45,14 +46,14 @@ public class suggestCommand extends ListenerAdapter {
                                 "VALUES (" + e.getAuthor().getId() + ", 1)";
                         PreparedStatement stt = mycon.prepareStatement(rowsAffected);
                         stt.executeUpdate();
+                        gay = true;
                     }
                 } catch (Exception er) {
                     er.printStackTrace();
                 }
 
             }
-        }
-        if (args.length != 1) {
+        } else if (gay) {
             sendErrorMessage(e.getTextChannel(), e.getMember());
         }
     }

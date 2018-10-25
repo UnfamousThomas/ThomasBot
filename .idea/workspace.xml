@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42c51ae-b5f7-470a-b8c2-ea46e1246f50" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WeGameBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeGameBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/commands/communication/suggest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Administration/unbanCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/unbanCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -88,16 +86,16 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
-          <entry key="java" value="19625" />
+          <entry key="java" value="19966" />
           <entry key="sql" value="26" />
-          <entry key="txt" value="10" />
+          <entry key="txt" value="11" />
           <entry key="xml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="19625" />
-          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="JAVA" value="19966" />
+          <entry key="PLAIN_TEXT" value="52" />
           <entry key="Scratch" value="26" />
           <entry key="XML" value="31" />
         </counts>
@@ -105,7 +103,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="59" />
+          <entry key="java" value="60" />
           <entry key="sql" value="3" />
           <entry key="xml" value="2" />
         </counts>
@@ -113,7 +111,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="59" />
+          <entry key="JAVA" value="60" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -145,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+            <state relative-caret-position="685">
+              <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -172,20 +170,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb8b7830-0433-417a-a621-a9ea7411919c/console.sql">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="186">
+              <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/unbanCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="55" column="28" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="28" />
+            <state relative-caret-position="441">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -263,6 +264,7 @@
       <find>history</find>
       <find>createtee</find>
       <find>you already</find>
+      <find>suggest</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -308,11 +310,12 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb8b7830-0433-417a-a621-a9ea7411919c/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WeGameBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/settings.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/Administration/unbanCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WeGameBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java" />
       </list>
     </option>
@@ -351,7 +354,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
@@ -412,15 +415,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="commands" type="462c0819:PsiDirectoryNode" />
-              <item name="info" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WeGameCom" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WeGameCom" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -449,7 +443,7 @@
     <property name="LombokPluginIS_VAL_Enabled" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540484367889" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540486321618" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -528,18 +522,18 @@
       <workItem from="1540457918602" duration="192000" />
       <workItem from="1540458136931" duration="1587000" />
       <workItem from="1540461729578" duration="1683000" />
-      <workItem from="1540464087283" duration="15113000" />
+      <workItem from="1540464087283" duration="16857000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92565000" />
+    <option name="totallyTimeSpent" value="94309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3294621" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1705379" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -680,16 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/unbanCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/dbconnection.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/MySQL.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -749,16 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -807,10 +781,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/unbanCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="55" column="28" selection-start-line="55" selection-start-column="12" selection-end-line="55" selection-end-column="28" />
+        <state relative-caret-position="186">
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

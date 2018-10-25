@@ -17,9 +17,9 @@ import java.util.concurrent.TimeUnit;
 public class unbanCommand extends ListenerAdapter {
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
-        if (e.getMember().isOwner()) {
             String[] args = e.getMessage().getContentRaw().split(" ");
             if (args[0].equalsIgnoreCase(settings.prefix + "unban")) {
+                if (e.getMember().isOwner()) {
                 if (args.length == 2) {
                     String target = args[1];
                     e.getGuild().getController().unban(target).queue();
