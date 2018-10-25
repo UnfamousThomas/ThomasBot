@@ -3,16 +3,14 @@ package commands.info;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.PrivateChannel;
-import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import utils.settings;
 
 import java.awt.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 public class helpCommand extends ListenerAdapter {
+
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
         if (!e.getAuthor().isBot()) {
@@ -26,22 +24,34 @@ public class helpCommand extends ListenerAdapter {
     }
     public static void DMlog(Member sent, PrivateChannel channel) {
         EmbedBuilder builder = new EmbedBuilder();
-        builder.setTitle("Commands:");
-        builder.addField("Information:","", false);
+        builder.setTitle("Commands");
+        String informationMsg = (
+            "**———————————————————**\n" +
+            "  **" + settings.prefix + "online**\n" + "*Displays online info, not including the bot.*\n" +
+            "  **" + settings.prefix + "ping**\n" + "*Displays the bot's ping to Discord.*\n" +
+            "  **" + settings.prefix + "help**\n" + "*Displays this message*\n" +
+            "\n**———————————————————**"
+        );
+        builder.addField("Information",informationMsg, true);
         builder.setColor(Color.decode("#e84118"));
-        builder.addField(settings.prefix + "online","Displays online info, discluding the bot.", false);
-        builder.addField(settings.prefix + "ping","Pong!" , false);
-        builder.addField(settings.prefix + "help", "Sends this.", false);
-        builder.addField("Communication:","", false);
-        builder.addField(settings.prefix + "suggestCommand", "Opens a channel for suggestions.", false);
-        builder.addField("Administration/Moderation:","", false);
-        builder.addField(settings.prefix + "announce","Sends a message in announcements.", false);
-        builder.addField(settings.prefix + "ban","Ban's someone.", false);
-        builder.addField(settings.prefix + "kick","Kick's someone", false);
-        builder.addField(settings.prefix + "mute","Mute's someone", false);
-        builder.addField(settings.prefix + "warn","Warn's someone.", false);
-        builder.addField(settings.prefix + "unban","Unban's someone", false);
-        builder.addField(settings.prefix + "clear","Clear's a chat for a certain amount of messages.", false);
+        String communicationMsg = (
+            "**———————————————————**\n" +
+            "  **" + settings.prefix + "suggest**\n" + "*Opens a channel for suggestions*\n" +
+            "\n**———————————————————**"
+        );
+        builder.addField("Communication",communicationMsg, true);
+        String moderationMsg = (
+            "**———————————————————**\n" +
+            "  **" + settings.prefix + "announce**\n" + "*Sends a message in announcements.*\n" +
+            "  **" + settings.prefix + "ban**\n" + "*Ban's someone.*\n" +
+            "  **" + settings.prefix + "kick**\n" + "*Kick's someone.*\n" +
+            "  **" + settings.prefix + "mute**\n" + "*Mute's someone.*\n" +
+            "  **" + settings.prefix + "warn**\n" + "*Warn's someone.*\n" +
+            "  **" + settings.prefix + "unban**\n" + "*Unban's someone.*\n" +
+            "  **" + settings.prefix + "clear**\n" + "*Clear's a chat for a certain amount of messages.*\n" +
+            "\n**———————————————————**"
+        );
+        builder.addField("Moderation:", moderationMsg, false);
 
 
         channel.sendMessage(builder.build()).queue();

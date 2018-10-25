@@ -63,13 +63,21 @@ public class clearCommand extends ListenerAdapter {
         builder.addField("Cleared Channel", cleared.getAsMention(), false);
         builder.addField("Number of messages cleared", num, false);
         builder.addField("Moderator", moderator.getAsMention(), false);
-        builder.addField("Reason", reason, false);
+        builder.addField("Reason", reason, true);
         builder.addField("Date", sdf.format(date), false);
-        builder.addField("Time", stf.format(date), false);
+        builder.addField("Time", stf.format(date), true);
         incident .sendMessage(builder.build()).queue();
 
     }
     private void purgeMessages(TextChannel channel, int num) {
+        if (num > 100) {
+            EmbedBuilder builder = new EmbedBuilder();
+            builder.setTitle("Error report");
+            builder.setColor(Color.decode("#e84118"));
+            builder.setDescription("Message amount given is greater than 100!\nAmount received: " + num);
+            channel.sendMessage(builder.build()).queue();
+            return;
+        }
         MessageHistory history = new MessageHistory(channel);
         List<Message> msgs;
 

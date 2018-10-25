@@ -19,24 +19,24 @@ public class banCommand extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
     String args[] = e.getMessage().getContentRaw().split(" ");
 
-    if (e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
         if (args[0].equalsIgnoreCase(settings.prefix + "ban")) {
-            if (!e.getAuthor().isBot()) {
-                if (args.length >=  3) {
-                    String reason = "";
-                    for (int i = 2; i < args.length; i++) {
-                        reason += args[i] + " ";
-                    } Member target = e.getMessage().getMentionedMembers().get(0);
-                    e.getGuild().getController().ban(target.getUser(), 7, reason).queue();
-                    e.getMessage().delete().queue();
-                    log(target, e.getMember(), reason, e.getGuild().getTextChannelById("503937433856114709"));
-                    String finalReason = reason;
-                    target.getUser().openPrivateChannel().queue(channel -> {
-                        DMlog(target, finalReason, channel);
-                    });
-                } else {
-                    sendErrorMessage(e.getChannel(), e.getMember());
-                }
+            if (e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
+                if (!e.getAuthor().isBot()) {
+                    if (args.length >=  3) {
+                        String reason = "";
+                        for (int i = 2; i < args.length; i++) {
+                            reason += args[i] + " ";
+                        } Member target = e.getMessage().getMentionedMembers().get(0);
+                        e.getGuild().getController().ban(target.getUser(), 7, reason).queue();
+                        e.getMessage().delete().queue();
+                        log(target, e.getMember(), reason, e.getGuild().getTextChannelById("503937433856114709"));
+                        String finalReason = reason;
+                        target.getUser().openPrivateChannel().queue(channel -> {
+                            DMlog(target, finalReason, channel);
+                        });
+                    } else {
+                        sendErrorMessage(e.getChannel(), e.getMember());
+                    }
             }
         }
     } else {
