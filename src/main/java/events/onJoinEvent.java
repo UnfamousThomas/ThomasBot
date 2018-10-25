@@ -3,7 +3,7 @@ package events;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
-
+import commands.info.helpCommand;
 
 public class onJoinEvent extends ListenerAdapter {
 
@@ -12,6 +12,12 @@ public class onJoinEvent extends ListenerAdapter {
         e.getGuild().getController().addSingleRoleToMember(e.getMember(), e.getGuild().getRoleById(504239064426348555L)).queue();
 
         TextChannel general = e.getGuild().getTextChannelById(504239461706498079L);
-        general.sendMessage("We now have " + (e.getGuild().getMembers().size() -1) + " members in our discord.").queue();
+        general.sendMessage("We now have " + (e.getGuild().getMembers().size() - 1) + " members in our discord.").queue();
+        e.getUser().openPrivateChannel().queue(channel -> {
+                    helpCommand.DMlog(e.getMember(), channel);
+                }
+        );
     }
+
+
 }

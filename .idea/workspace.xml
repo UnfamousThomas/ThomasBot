@@ -2,38 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c42c51ae-b5f7-470a-b8c2-ea46e1246f50" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/WeGameBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/WeGameBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/announceCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/announceCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/banCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/banCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/clearCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/infoCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/WIP/infoCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/kickCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/muteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/onlineCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/pingCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/info/pingCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/suggest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/unbanCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/unbanCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/commands/warnCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/settings.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/dbconnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/WIP/infoCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/database.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/WeGameBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WeGameBot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/announceCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/banCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/clearCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/infoCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/kickCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/muteCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/onlineCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/pingCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/suggest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/unbanCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/commands/warnCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/settings.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utils/dbconnection.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/WIP/infoCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/WIP/suggest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/database.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -115,7 +94,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
-          <entry key="java" value="18625" />
+          <entry key="java" value="19577" />
           <entry key="sql" value="26" />
           <entry key="txt" value="10" />
           <entry key="xml" value="31" />
@@ -123,7 +102,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="18625" />
+          <entry key="JAVA" value="19577" />
           <entry key="PLAIN_TEXT" value="51" />
           <entry key="Scratch" value="26" />
           <entry key="XML" value="31" />
@@ -132,7 +111,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="52" />
+          <entry key="java" value="56" />
           <entry key="sql" value="3" />
           <entry key="xml" value="2" />
         </counts>
@@ -140,7 +119,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="52" />
+          <entry key="JAVA" value="56" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="2" />
         </counts>
@@ -172,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="373">
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="254">
+              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,15 +170,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb8b7830-0433-417a-a621-a9ea7411919c/console.sql">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="17">
@@ -208,11 +178,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+            <state relative-caret-position="-340">
+              <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="21" column="50" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="21" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/events/onJoinEvent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-307">
+              <caret line="32" column="54" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -244,6 +250,7 @@
       <find>reason</find>
       <find>history</find>
       <find>createtee</find>
+      <find>you already</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -267,7 +274,6 @@
         <option value="$PROJECT_DIR$/src/main/java/events/commands/muteCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/clearCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/onlineCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/infoCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/banCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/warnCommand.java" />
@@ -286,11 +292,14 @@
         <option value="$PROJECT_DIR$/src/main/java/utils/MySQL.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/utils/MySQLDatabase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/WeGameBot.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/info/pingCommand.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bb8b7830-0433-417a-a621-a9ea7411919c/console.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/utils/database.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/database.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/WeGameBot.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" />
       </list>
     </option>
   </component>
@@ -328,7 +337,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
@@ -381,7 +390,24 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="commands" type="462c0819:PsiDirectoryNode" />
+              <item name="communication" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeGameCom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeGameCom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="commands" type="462c0819:PsiDirectoryNode" />
               <item name="info" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WeGameCom" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WeGameCom" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WeGameCom" type="b2602c69:ProjectViewProjectNode" />
@@ -409,7 +435,7 @@
     <property name="LombokPluginIS_VAL_Enabled" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540478751567" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540483455099" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -488,18 +514,18 @@
       <workItem from="1540457918602" duration="192000" />
       <workItem from="1540458136931" duration="1587000" />
       <workItem from="1540461729578" duration="1683000" />
-      <workItem from="1540464087283" duration="12050000" />
+      <workItem from="1540464087283" duration="14336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89502000" />
+    <option name="totallyTimeSpent" value="91788000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3294621" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -509,7 +535,7 @@
       <window_info anchor="bottom" id="Database Console" weight="0.3256617" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33488372" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49633253" visible="true" weight="0.31990793" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49633253" visible="true" weight="0.31990793" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -590,13 +616,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onMsgDelete.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onReaction.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onsomething.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/events/onJoinEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onMsgEdit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -661,23 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/WIP/infoCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -723,16 +725,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="373">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bb8b7830-0433-417a-a621-a9ea7411919c/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -740,10 +732,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/pingCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="-307">
+          <caret line="32" column="54" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -754,10 +749,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/WIP/suggest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/WIP/infoCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="55" column="52" selection-start-line="55" selection-start-column="52" selection-end-line="55" selection-end-column="52" />
+        <state relative-caret-position="68">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/pingCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="20" selection-start-column="16" selection-end-line="21" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/events/onJoinEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
