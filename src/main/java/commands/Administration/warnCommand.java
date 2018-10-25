@@ -31,6 +31,7 @@ public class warnCommand extends ListenerAdapter {
                 String finalReason = reason;
                 u.openPrivateChannel().queue(channel -> {
                     DMlog(target, finalReason, channel);
+
                 });
 
 
