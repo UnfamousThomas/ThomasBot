@@ -11,10 +11,13 @@ import java.awt.*;
 import java.sql.*;
 import java.util.concurrent.TimeUnit;
 
+import static utils.settings.dbUrl;
+import static utils.settings.user;
+import static utils.settings.pass;
+
+
 public class suggest extends ListenerAdapter {
-    String dbUrl = "jdbc:mysql://localhost:3306/discordbot";
-    String user = "bot";
-    String pass = "koolkool123";
+
 
     @Override
     public void onMessageReceived(MessageReceivedEvent e) {
