@@ -26,6 +26,12 @@
             <artifactId>JDA</artifactId>
             <version>3.8.1_438</version>
         </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.11</version>
+        </dependency>
     </dependencies>
 
     <repositories>

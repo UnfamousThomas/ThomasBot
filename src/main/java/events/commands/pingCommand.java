@@ -14,8 +14,7 @@ public class pingCommand extends ListenerAdapter {
 
         if (author.isBot()) { return; }
         else if(msg.getContentRaw().equalsIgnoreCase(settings.prefix + "ping")) {
-            channel.sendMessage(author.getAsMention() + " Pong!").queue();
-        }
+            channel.sendMessage(author.getAsMention() + " Pong!").queue(); }
 
         }
     }
