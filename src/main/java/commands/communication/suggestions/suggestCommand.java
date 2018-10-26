@@ -24,9 +24,9 @@ public class suggestCommand extends ListenerAdapter {
     public void onMessageReceived(MessageReceivedEvent e) {
         String[] args = e.getMessage().getContentRaw().split(" ");
         String dcuser = e.getAuthor().getName();
-            if (args[0].equalsIgnoreCase(settings.prefix + "suggest")) {
-                if (args.length == 1) {
-                    try {
+        if (args[0].equalsIgnoreCase(settings.prefix + "suggest")) {
+            if (args.length == 1) {
+                try {
                     Connection myConn = DriverManager.getConnection(dbUrl, user, pass);
                     Statement stat = myConn.createStatement();
                     String iduser = "SELECT * FROM suggestions WHERE UserID='" + e.getAuthor().getId() + "'";
@@ -36,17 +36,36 @@ public class suggestCommand extends ListenerAdapter {
                         ResultSet existhas = stat.executeQuery(hassu);
                         if (existhas.next()) {
                             e.getChannel().sendMessage("You already have a suggestion's channel. You can only have one!").queue();
+                        } else {
+                            e.getGuild().getController().createTextChannel("suggestions-" + e.getAuthor().getName()).queue(channel -> {
+                                TextChannel c = (TextChannel) channel;
+                                Category sugs = e.getGuild().getCategoryById("505140448520830998");
+                                channel.getManager().setParent(sugs).queue();
+                                e.getChannel().sendMessage("Channel created: " + ((TextChannel) channel).getAsMention()).queue();
+                                channel.getManager().setTopic(e.getAuthor().getId()).queue();
+
+                                channel.getManager().putPermissionOverride(e.getMember(), EnumSet.of(Permission.MESSAGE_READ), null).queue();
+                                channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null, EnumSet.of(Permission.MESSAGE_READ)).queueAfter(3, TimeUnit.SECONDS);
+
+
+                            });
+                            Connection mycon = DriverManager.getConnection(dbUrl, user, pass);
+                            Statement st = mycon.createStatement();
+                            String rowsAffected = "INSERT INTO suggestions (UserID, Suggestion)" +
+                                    "VALUES (" + e.getAuthor().getId() + ", 1)";
+                            PreparedStatement stt = mycon.prepareStatement(rowsAffected);
+                            stt.executeUpdate();
                         }
                     } else {
                         e.getGuild().getController().createTextChannel("suggestions-" + e.getAuthor().getName()).queue(channel -> {
-                             TextChannel c = (TextChannel) channel;
+                            TextChannel c = (TextChannel) channel;
                             Category sugs = e.getGuild().getCategoryById("505140448520830998");
-                             channel.getManager().setParent(sugs).queue();
+                            channel.getManager().setParent(sugs).queue();
                             e.getChannel().sendMessage("Channel created: " + ((TextChannel) channel).getAsMention()).queue();
                             channel.getManager().setTopic(e.getAuthor().getId()).queue();
 
-                            channel.getManager().putPermissionOverride(e.getMember(), EnumSet.of(Permission.MESSAGE_READ),null).queue();
-                            channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null , EnumSet.of(Permission.MESSAGE_READ)).queueAfter(3, TimeUnit.SECONDS);
+                            channel.getManager().putPermissionOverride(e.getMember(), EnumSet.of(Permission.MESSAGE_READ), null).queue();
+                            channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null, EnumSet.of(Permission.MESSAGE_READ)).queueAfter(3, TimeUnit.SECONDS);
 
 
                         });
@@ -62,8 +81,8 @@ public class suggestCommand extends ListenerAdapter {
                 }
 
             } else if (args.length >= 2) {
-                    sendErrorMessage(e.getTextChannel(), e.getMember());
-        }
+                sendErrorMessage(e.getTextChannel(), e.getMember());
+            }
         }
     }
 

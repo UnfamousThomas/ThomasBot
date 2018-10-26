@@ -1,6 +1,5 @@
 package commands.Administration;
 
-import utils.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
@@ -8,6 +7,7 @@ import net.dv8tion.jda.core.entities.PrivateChannel;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import utils.settings;
 
 import java.awt.*;
 import java.text.SimpleDateFormat;
@@ -15,18 +15,19 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 public class banCommand extends ListenerAdapter {
-@Override
+    @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
-    String args[] = e.getMessage().getContentRaw().split(" ");
+        String args[] = e.getMessage().getContentRaw().split(" ");
 
         if (args[0].equalsIgnoreCase(settings.prefix + "ban")) {
             if (e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 if (!e.getAuthor().isBot()) {
-                    if (args.length >=  3) {
+                    if (args.length >= 3) {
                         String reason = "";
                         for (int i = 2; i < args.length; i++) {
                             reason += args[i] + " ";
-                        } Member target = e.getMessage().getMentionedMembers().get(0);
+                        }
+                        Member target = e.getMessage().getMentionedMembers().get(0);
                         e.getGuild().getController().ban(target.getUser(), 7, reason).queue();
                         e.getMessage().delete().queue();
                         log(target, e.getMember(), reason, e.getGuild().getTextChannelById("503937433856114709"));
@@ -37,12 +38,13 @@ public class banCommand extends ListenerAdapter {
                     } else {
                         sendErrorMessage(e.getChannel(), e.getMember());
                     }
+                }
             }
+        } else {
+            e.getChannel().sendMessage("Invalid permissions.");
         }
-    } else {
-        e.getChannel().sendMessage("Invalid permissions.");
     }
-}
+
     public void sendErrorMessage(TextChannel channel, Member member) {
         EmbedBuilder builder = new EmbedBuilder();
         builder.setTitle("Invalid Usage!:");
@@ -52,6 +54,7 @@ public class banCommand extends ListenerAdapter {
         builder.addField("Proper usage: .ban [@USER] [reason]", "", false);
         channel.sendMessage(builder.build()).complete().delete().queueAfter(30, TimeUnit.SECONDS);
     }
+
     public void log(Member banner, Member banned, String reason, TextChannel channel) {
         SimpleDateFormat sdf = new SimpleDateFormat("MM/d/yyyy");
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");
@@ -68,6 +71,7 @@ public class banCommand extends ListenerAdapter {
         channel.sendMessage(builder.build()).queue();
 
     }
+
     public void DMlog(Member banned, String reason, PrivateChannel channel) {
         SimpleDateFormat sdf = new SimpleDateFormat("MM/d/yyyy");
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");

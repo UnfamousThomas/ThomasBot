@@ -1,12 +1,12 @@
 package commands.Administration;
 
-import utils.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.TextChannel;
 import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import utils.settings;
 
 import java.awt.*;
 import java.util.concurrent.TimeUnit;
@@ -17,17 +17,17 @@ public class announceCommand extends ListenerAdapter {
         String[] args = e.getMessage().getContentRaw().split(" ");
         if (args[0].equalsIgnoreCase(settings.prefix + "announce")) {
             if (!e.getAuthor().isBot() && e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
-                if(args.length < 2) {
+                if (args.length < 2) {
                     sendErrorMessage(e.getTextChannel(), e.getMember());
                     e.getMessage().delete().queueAfter(15, TimeUnit.SECONDS);
-                } else if(args.length >= 2) {
+                } else if (args.length >= 2) {
                     Member m = e.getMember();
                     String reason = "";
                     for (int i = 1; i < args.length; i++) {
                         reason += args[i] + " ";
                     }
-                        e.getMessage().delete().queue();
-                        sendAnnouncement(reason, e.getMember(), e.getGuild().getTextChannelById("503935759246557205"));
+                    e.getMessage().delete().queue();
+                    sendAnnouncement(reason, e.getMember(), e.getGuild().getTextChannelById("503935759246557205"));
                 }
             }
         }
@@ -42,11 +42,12 @@ public class announceCommand extends ListenerAdapter {
         builder.addField("Proper usage: .announce [MESSAGE]", "", false);
         channel.sendMessage(builder.build()).complete().delete().queueAfter(30, TimeUnit.SECONDS);
     }
+
     public void sendAnnouncement(String msg, Member m, TextChannel c) {
         EmbedBuilder b = new EmbedBuilder();
         b.setTitle("ANNOUNCEMENT");
         b.setAuthor(m.getUser().getName(), m.getUser().getAvatarUrl(), m.getUser().getAvatarUrl());
-        b.addField("Message:", msg,false);
+        b.addField("Message:", msg, false);
         b.setColor(Color.decode("#f1c40f"));
         c.sendMessage(b.build()).complete().delete().queueAfter(10, TimeUnit.DAYS);
         c.sendMessage("@everyone").queue();

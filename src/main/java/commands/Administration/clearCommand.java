@@ -1,11 +1,11 @@
 package commands.Administration;
 
-import utils.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import utils.settings;
 
 import java.awt.*;
 import java.text.SimpleDateFormat;
@@ -18,7 +18,7 @@ public class clearCommand extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
         String[] args = e.getMessage().getContentRaw().split(" ");
 
-        if(args[0].equalsIgnoreCase(settings.prefix + "clear")) {
+        if (args[0].equalsIgnoreCase(settings.prefix + "clear")) {
             Message msg = e.getMessage();
             User author = e.getAuthor();
             String name = author.getName();
@@ -28,11 +28,11 @@ public class clearCommand extends ListenerAdapter {
             if (args.length <= 2 && e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 msg.delete().queue();
                 sendErrorMessage(channel, m);
-            } else if(e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
+            } else if (e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 msg.delete().queue();
                 TextChannel target = e.getMessage().getMentionedChannels().get(0);
                 purgeMessages(target, Integer.parseInt(args[2]));
-                if(args.length > 3) {
+                if (args.length > 3) {
                     String reason = "";
                     for (int i = 3; i < args.length; i++) {
                         reason += args[i] + " ";
@@ -42,8 +42,10 @@ public class clearCommand extends ListenerAdapter {
                     log(m, args[2], "", e.getGuild().getTextChannelById("503937433856114709"), target);
                 }
 
+            }
         }
-    }}
+    }
+
     public void sendErrorMessage(TextChannel channel, Member member) {
         EmbedBuilder builder = new EmbedBuilder();
         builder.setTitle("Invalid Usage!:");
@@ -53,6 +55,7 @@ public class clearCommand extends ListenerAdapter {
         builder.addField("Proper usage: !clear [channel] [Message amount] [reason]", "", false);
         channel.sendMessage(builder.build()).complete().delete().queueAfter(30, TimeUnit.SECONDS);
     }
+
     public void log(Member moderator, String num, String reason, TextChannel incident, TextChannel cleared) {
         SimpleDateFormat sdf = new SimpleDateFormat("MM/d/yyyy");
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");
@@ -66,9 +69,10 @@ public class clearCommand extends ListenerAdapter {
         builder.addField("Reason", reason, true);
         builder.addField("Date", sdf.format(date), false);
         builder.addField("Time", stf.format(date), true);
-        incident .sendMessage(builder.build()).queue();
+        incident.sendMessage(builder.build()).queue();
 
     }
+
     private void purgeMessages(TextChannel channel, int num) {
         if (num > 100) {
             EmbedBuilder builder = new EmbedBuilder();

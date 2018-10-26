@@ -16,6 +16,7 @@ public class helpCommand extends ListenerAdapter {
         if (!e.getAuthor().isBot()) {
             String[] args = e.getMessage().getContentRaw().split(" ");
             if (args[0].equalsIgnoreCase(settings.prefix + "help")) {
+                e.getChannel().sendMessage(e.getAuthor().getAsMention() + ", sent the list of commands to you!").queue();
                 e.getAuthor().openPrivateChannel().queue(channel -> {
                     DMlog(e.getMember(), channel);
                 });
@@ -26,7 +27,7 @@ public class helpCommand extends ListenerAdapter {
         EmbedBuilder builder = new EmbedBuilder();
         builder.setTitle("Commands");
         String informationMsg = (
-            "**————————————∟———————**\n" +
+            "**———————————————————**\n" +
             "  **" + settings.prefix + "online**\n" + "*Displays online info, not including the bot.*\n" +
             "  **" + settings.prefix + "ping**\n" + "*Displays the bot's ping to Discord.*\n" +
             "  **" + settings.prefix + "help**\n" + "*Displays this message*\n" +

@@ -6,6 +6,7 @@ import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import utils.settings;
+
 public class onlineCommand extends ListenerAdapter {
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent e) {
@@ -15,17 +16,17 @@ public class onlineCommand extends ListenerAdapter {
         MessageChannel channel = e.getChannel();
 
         String[] args = e.getMessage().getContentRaw().split(" ");
-        if(args[0].equalsIgnoreCase(settings.prefix + "online")) {
+        if (args[0].equalsIgnoreCase(settings.prefix + "online")) {
             int online = 0;
             if (!bot) {
-                for (int i = 0; i < e.getGuild().getMembers().size(); i++){
-                    if(e.getGuild().getMembers().get(i).getOnlineStatus() == OnlineStatus.ONLINE || e.getGuild().getMembers().get(i).getOnlineStatus() == OnlineStatus.DO_NOT_DISTURB) {
+                for (int i = 0; i < e.getGuild().getMembers().size(); i++) {
+                    if (e.getGuild().getMembers().get(i).getOnlineStatus() == OnlineStatus.ONLINE || e.getGuild().getMembers().get(i).getOnlineStatus() == OnlineStatus.DO_NOT_DISTURB) {
                         online++;
                     }
                 }
-                channel.sendMessage("There are: " + (online -1 ) + " members online. There are " + (e.getGuild().getMembers().size() -1) + " members in this discord server.").queue();
-                } else channel.sendMessage(name + " is a bot! Will not respond.").queue();
-            }
-
+                channel.sendMessage("There are: " + (online - 1) + " members online. There are " + (e.getGuild().getMembers().size() - 1) + " members in this discord server.").queue();
+            } else channel.sendMessage(name + " is a bot! Will not respond.").queue();
         }
+
     }
+}

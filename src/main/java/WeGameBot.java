@@ -1,6 +1,7 @@
 
 
 import commands.Administration.*;
+import commands.communication.suggestions.closeCommand;
 import commands.communication.suggestions.suggestCommand;
 import commands.info.helpCommand;
 import commands.info.onlineCommand;
@@ -34,6 +35,7 @@ public class WeGameBot {
                     .addEventListener(new onMsgEdit())
                     .addEventListener(new suggestCommand())
                     .addEventListener(new helpCommand())
+                    .addEventListener(new closeCommand())
 
                     .setGame(Game.watching("Thomas play games on his discord!"))
                     .setStatus(OnlineStatus.DO_NOT_DISTURB)

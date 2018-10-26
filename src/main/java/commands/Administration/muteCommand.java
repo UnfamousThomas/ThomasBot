@@ -1,11 +1,11 @@
 package commands.Administration;
 
-import utils.settings;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.Permission;
 import net.dv8tion.jda.core.entities.*;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import utils.settings;
 
 import java.awt.*;
 import java.text.SimpleDateFormat;
@@ -26,7 +26,7 @@ public class muteCommand extends ListenerAdapter {
 
             if (!isbot && e.getMember().hasPermission(Permission.ADMINISTRATOR)) {
                 if (args.length <= 1) {
-                sendErrorMessage(cha, e.getMember());
+                    sendErrorMessage(cha, e.getMember());
                 } else {
                     Member target = msg.getMentionedMembers().get(0);
                     Role muted = e.getGuild().getRoleById("503936463319072780");
@@ -34,14 +34,15 @@ public class muteCommand extends ListenerAdapter {
                     e.getGuild().getController().addSingleRoleToMember(target, muted).queue();
                     e.getGuild().getController().removeSingleRoleFromMember(target, muted).queueAfter(1, TimeUnit.DAYS);
 
-                    if(args.length >= 3){
+                    if (args.length >= 3) {
                         String reason = "";
                         for (int i = 2; i < args.length; i++) {
                             reason += args[i] + " ";
-                        }  log(target,e.getMember(), reason, e.getGuild().getTextChannelById("503937433856114709"));
+                        }
+                        log(target, e.getMember(), reason, e.getGuild().getTextChannelById("503937433856114709"));
                         msg.delete().queue();
                     } else {
-                        log(target, e.getMember(),"", e.getGuild().getTextChannelById("503937433856114709"));
+                        log(target, e.getMember(), "", e.getGuild().getTextChannelById("503937433856114709"));
                         msg.delete().queue();
                     }
                 }
@@ -51,6 +52,7 @@ public class muteCommand extends ListenerAdapter {
             }
         }
     }
+
     public void sendErrorMessage(TextChannel channel, Member member) {
         EmbedBuilder builder = new EmbedBuilder();
         builder.setTitle("Invalid Usage!:");
@@ -60,6 +62,7 @@ public class muteCommand extends ListenerAdapter {
         builder.addField("Proper usage: !mute [@USER] {reason}", "", false);
         channel.sendMessage(builder.build()).complete().delete().queueAfter(30, TimeUnit.SECONDS);
     }
+
     public void log(Member muted, Member muter, String reason, TextChannel channel) {
         SimpleDateFormat sdf = new SimpleDateFormat("MM/d/yyyy");
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");

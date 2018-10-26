@@ -1,9 +1,11 @@
 package commands.info;
 
-import utils.settings;
-import net.dv8tion.jda.core.entities.*;
+import net.dv8tion.jda.core.entities.Message;
+import net.dv8tion.jda.core.entities.MessageChannel;
+import net.dv8tion.jda.core.entities.User;
 import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
+import utils.settings;
 
 public class pingCommand extends ListenerAdapter {
     @Override
@@ -13,9 +15,11 @@ public class pingCommand extends ListenerAdapter {
         MessageChannel channel = e.getChannel();
         Message msg = e.getMessage();
 
-        if (author.isBot()) { return; }
-        else if(msg.getContentRaw().equalsIgnoreCase(settings.prefix + "ping")) {
+        if (author.isBot()) {
+            return;
+        } else if (msg.getContentRaw().equalsIgnoreCase(settings.prefix + "ping")) {
             channel.sendMessage(author.getAsMention() + " Pong!").queue();
 
         }
-    }}
+    }
+}
