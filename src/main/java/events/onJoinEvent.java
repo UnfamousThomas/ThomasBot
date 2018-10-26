@@ -18,7 +18,7 @@ public class onJoinEvent extends ListenerAdapter {
         e.getGuild().getController().addSingleRoleToMember(e.getMember(), e.getGuild().getRoleById(504239064426348555L)).queue();
 
         TextChannel general = e.getGuild().getTextChannelById(504239461706498079L);
-        general.sendMessage(e.getMember().getAsMention() + "just joined our discord, we now have " + (e.getGuild().getMembers().size() - 1) + " members in our discord.").queue();
+        general.sendMessage(e.getMember().getAsMention() + " just joined our discord, we now have " + (e.getGuild().getMembers().size() - 1) + " members in our discord.").queue();
         int am =(e.getGuild().getMembers().size() -1);
         log(e.getMember(), e.getGuild().getTextChannelById("504413608399339546"), am);
         e.getUser().openPrivateChannel().queue(channel -> {
@@ -32,7 +32,7 @@ public class onJoinEvent extends ListenerAdapter {
         SimpleDateFormat stf = new SimpleDateFormat("HH:mm:ss");
         Date date = new Date(System.currentTimeMillis());
         EmbedBuilder builder = new EmbedBuilder();
-        builder.setTitle("Warn report");
+        builder.setTitle("Join report");
         builder.setColor(Color.decode("#e84118"));
         builder.addField("Joined User", joined.getAsMention(), false);
         builder.addField("Amount of users:", String.valueOf(amount), false);

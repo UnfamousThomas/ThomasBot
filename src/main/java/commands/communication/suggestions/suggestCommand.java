@@ -43,9 +43,10 @@ public class suggestCommand extends ListenerAdapter {
                                 channel.getManager().setParent(sugs).queue();
                                 e.getChannel().sendMessage("Channel created: " + ((TextChannel) channel).getAsMention()).queue();
                                 channel.getManager().setTopic(e.getAuthor().getId()).queue();
+                                c.sendMessage("Please write and discuss your suggestion with staff member's here, " + e.getAuthor().getName()).queue();
 
                                 channel.getManager().putPermissionOverride(e.getMember(), EnumSet.of(Permission.MESSAGE_READ), null).queue();
-                                channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null, EnumSet.of(Permission.MESSAGE_READ)).queueAfter(3, TimeUnit.SECONDS);
+                                channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null, EnumSet.of(Permission.MESSAGE_READ)).queueAfter(1, TimeUnit.SECONDS);
 
 
                             });
@@ -63,9 +64,10 @@ public class suggestCommand extends ListenerAdapter {
                             channel.getManager().setParent(sugs).queue();
                             e.getChannel().sendMessage("Channel created: " + ((TextChannel) channel).getAsMention()).queue();
                             channel.getManager().setTopic(e.getAuthor().getId()).queue();
+                            c.sendMessage("Please write and discuss your suggestion with staff member's here, " + e.getAuthor().getName()).queue();
 
                             channel.getManager().putPermissionOverride(e.getMember(), EnumSet.of(Permission.MESSAGE_READ), null).queue();
-                            channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null, EnumSet.of(Permission.MESSAGE_READ)).queueAfter(3, TimeUnit.SECONDS);
+                            channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null, EnumSet.of(Permission.MESSAGE_READ)).queueAfter(1, TimeUnit.SECONDS);
 
 
                         });

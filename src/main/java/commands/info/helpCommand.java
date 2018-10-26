@@ -37,20 +37,20 @@ public class helpCommand extends ListenerAdapter {
         builder.setColor(Color.decode("#e84118"));
         String communicationMsg = (
             "**———————————————————**\n" +
-            "  **" + settings.prefix + "suggest**\n" + "*Opens a channel for suggestions*\n" +
-            "  **" + settings.prefix + "close**\n" + "*Closes suggestion channel.*\n" +
+            "  **" + settings.prefix + "suggest**\n" + "*Opens a channel for suggestions (Staff)*\n" +
+            "  **" + settings.prefix + "close**\n" + "*Closes suggestion channel (Staff)*\n" +
             "\n**———————————————————**"
         );
         builder.addField("Communication",communicationMsg, true);
         String moderationMsg = (
             "**———————————————————**\n" +
-            "  **" + settings.prefix + "announce**\n" + "*Sends a message in announcements.*\n" +
-            "  **" + settings.prefix + "ban**\n" + "*Ban's someone.*\n" +
-            "  **" + settings.prefix + "kick**\n" + "*Kick's someone.*\n" +
-            "  **" + settings.prefix + "mute**\n" + "*Mute's someone.*\n" +
-            "  **" + settings.prefix + "warn**\n" + "*Warn's someone.*\n" +
-            "  **" + settings.prefix + "unban**\n" + "*Unban's someone.*\n" +
-            "  **" + settings.prefix + "clear**\n" + "*Clear's a chat for a certain amount of messages.*\n" +
+            "  **" + settings.prefix + "announce**\n" + "*Sends a message in announcements (Staff)*\n" +
+            "  **" + settings.prefix + "ban**\n" + "*Ban's someone (Staff)*\n" +
+            "  **" + settings.prefix + "kick**\n" + "*Kick's someone (Staff)*\n" +
+            "  **" + settings.prefix + "mute**\n" + "*Mute's someone (Staff)*\n" +
+            "  **" + settings.prefix + "warn**\n" + "*Warn's someone (Staff)*\n" +
+            "  **" + settings.prefix + "unban**\n" + "*Unban's someone (Staff)*\n" +
+            "  **" + settings.prefix + "clear**\n" + "*Clear's a chat for a certain amount of messages (Staff)*\n" +
             "\n**———————————————————**"
         );
         builder.addField("Moderation:", moderationMsg, false);
