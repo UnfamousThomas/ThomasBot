@@ -38,6 +38,7 @@ public class helpCommand extends ListenerAdapter {
         String communicationMsg = (
             "**———————————————————**\n" +
             "  **" + settings.prefix + "suggest**\n" + "*Opens a channel for suggestions*\n" +
+            "  **" + settings.prefix + "close**\n" + "*Closes suggestion channel.*\n" +
             "\n**———————————————————**"
         );
         builder.addField("Communication",communicationMsg, true);
