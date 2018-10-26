@@ -1,4 +1,4 @@
-package commands.communication;
+package commands.communication.suggestions;
 
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.Permission;
@@ -43,7 +43,7 @@ public class suggestCommand extends ListenerAdapter {
                             Category sugs = e.getGuild().getCategoryById("505140448520830998");
                              channel.getManager().setParent(sugs).queue();
                             e.getChannel().sendMessage("Channel created: " + ((TextChannel) channel).getAsMention()).queue();
-                            channel.getManager().setTopic("Suggestion channel for: " + e.getAuthor().getName()).queue();
+                            channel.getManager().setTopic(e.getAuthor().getId()).queue();
 
                             channel.getManager().putPermissionOverride(e.getMember(), EnumSet.of(Permission.MESSAGE_READ),null).queue();
                             channel.getManager().putPermissionOverride(e.getGuild().getPublicRole(), null , EnumSet.of(Permission.MESSAGE_READ)).queueAfter(3, TimeUnit.SECONDS);

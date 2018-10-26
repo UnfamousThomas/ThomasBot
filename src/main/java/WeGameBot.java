@@ -1,7 +1,7 @@
 
 
 import commands.Administration.*;
-import commands.communication.suggestCommand;
+import commands.communication.suggestions.suggestCommand;
 import commands.info.helpCommand;
 import commands.info.onlineCommand;
 import commands.info.pingCommand;
