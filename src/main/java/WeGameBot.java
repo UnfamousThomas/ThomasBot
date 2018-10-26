@@ -7,6 +7,7 @@ import commands.info.helpCommand;
 import commands.info.onlineCommand;
 import commands.info.pingCommand;
 import events.onJoinEvent;
+import events.onLeaveEvent;
 import events.onMsgEdit;
 import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.JDA;
@@ -36,6 +37,7 @@ public class WeGameBot {
                     .addEventListener(new suggestCommand())
                     .addEventListener(new helpCommand())
                     .addEventListener(new closeCommand())
+                    .addEventListener(new onLeaveEvent())
 
                     .setGame(Game.watching("Thomas play games on his discord!"))
                     .setStatus(OnlineStatus.DO_NOT_DISTURB)
