@@ -6,13 +6,27 @@
   <component name="ChangeListManager">
     <list default="true" id="c42c51ae-b5f7-470a-b8c2-ea46e1246f50" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/communication/suggestions/suggestCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/communication/suggestions/suggestCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/onJoinEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/events/onLeaveEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/events/onLeaveEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/WeGameBot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/WeGameBot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/events/onJoinEvent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/events/onJoinEvent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/WeGameBot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Administration/announceCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Administration/banCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Administration/clearCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Administration/kickCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Administration/muteCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Administration/unbanCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/Administration/warnCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/communication/suggestions/closeCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/communication/suggestions/suggestCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/info/helpCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/info/onlineCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/commands/info/pingCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/events/onJoinEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/events/onLeaveEvent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/events/onMsgEdit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/utils/settings.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -86,53 +100,53 @@
     <session id="-1232002175">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="2" />
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="6" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.7" value="3" />
-          <entry key="project.open.time.8" value="2" />
+          <entry key="project.open.time.8" value="3" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="23" />
+          <entry key="project.opened" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="41" />
-          <entry key="java" value="26353" />
+          <entry key="java" value="26869" />
           <entry key="sql" value="69" />
           <entry key="txt" value="11" />
-          <entry key="xml" value="31" />
+          <entry key="xml" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="26353" />
+          <entry key="JAVA" value="26869" />
           <entry key="PLAIN_TEXT" value="52" />
           <entry key="Scratch" value="69" />
-          <entry key="XML" value="31" />
+          <entry key="XML" value="96" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="2" />
-          <entry key="java" value="81" />
+          <entry key="java" value="89" />
           <entry key="sql" value="5" />
-          <entry key="xml" value="3" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="2" />
-          <entry key="JAVA" value="81" />
+          <entry key="JAVA" value="89" />
           <entry key="Scratch" value="5" />
-          <entry key="XML" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -162,22 +176,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestions/suggestCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="527">
               <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -187,49 +189,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/pingCommand.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
+            <state relative-caret-position="357">
               <caret line="26" column="211" selection-start-line="26" selection-start-column="211" selection-end-line="26" selection-end-column="211" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/utils/database.java">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1054">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/events/onJoinEvent.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="34" column="30" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/events/onLeaveEvent.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="323">
+              <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -240,17 +221,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="46" />
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/events/onLeaveEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="52" column="110" selection-start-line="52" selection-start-column="110" selection-end-line="52" selection-end-column="110" />
+            <state relative-caret-position="170">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -259,10 +240,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="77" column="53" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="77" selection-end-column="53" />
+            <state relative-caret-position="1088">
+              <caret line="77" column="53" selection-start-line="67" selection-start-column="8" selection-end-line="77" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -291,6 +293,7 @@
       <find>$</find>
       <find>map</find>
       <find>lo</find>
+      <find>target</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -299,9 +302,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/events/onGuildMessageReceived.java" />
-        <option value="$PROJECT_DIR$/src/main/java/events/onMessageReceived.java" />
-        <option value="$PROJECT_DIR$/src/main/java/events/pingCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/settings.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/onlineCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/commands/triviaCommand.java" />
@@ -333,8 +333,6 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/commandManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggestCommand.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Administration/kickCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Administration/clearCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/Administration/banCommand.java" />
@@ -348,8 +346,13 @@
         <option value="$PROJECT_DIR$/src/main/java/commands/info/pingCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/events/onLeaveEvent.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/communication/suggestions/suggestCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/AudioPlayerSendHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/music/AudioHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/utils/music/AudioListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -388,8 +391,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="947" />
-    <option name="width" value="740" />
+    <option name="x" value="-7" />
+    <option name="width" value="754" />
     <option name="height" value="1017" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -398,8 +401,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -494,9 +497,9 @@
     <property name="LombokPluginIS_VAL_Enabled" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540562712602" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540586534344" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Bot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -575,18 +578,20 @@
       <workItem from="1540461729578" duration="1683000" />
       <workItem from="1540464087283" duration="32253000" />
       <workItem from="1540546647481" duration="368000" />
-      <workItem from="1540547158511" duration="7667000" />
+      <workItem from="1540547158511" duration="12461000" />
+      <workItem from="1540592492399" duration="634000" />
+      <workItem from="1540635941723" duration="4068000" />
+      <workItem from="1540652507715" duration="10000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117740000" />
+    <option name="totallyTimeSpent" value="127246000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49616858" visible="true" weight="0.3294621" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49616858" visible="true" weight="0.16564792" />
       <window_info id="Structure" order="1" sideWeight="0.50085765" side_tool="true" weight="0.3294621" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -595,7 +600,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50383145" side_tool="true" weight="0.3294621" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.33486766" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49633253" visible="true" weight="0.3210587" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49633253" weight="0.3210587" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39930955" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -615,7 +620,7 @@
       <window_info anchor="right" id="Database" order="6" weight="0.66625917" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.5629584" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.5611247" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.04767726" />
@@ -689,13 +694,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/kickCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -717,13 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="62" column="98" lean-forward="true" selection-start-line="55" selection-start-column="4" selection-end-line="62" selection-end-column="98" />
         </state>
       </provider>
     </entry>
@@ -758,27 +749,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="9" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/database.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="58" selection-start-line="12" selection-start-column="58" selection-end-line="12" selection-end-column="58" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/pingCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
         </state>
       </provider>
     </entry>
@@ -789,30 +770,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/AudioPlayerSendHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/music/MusicManager.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/music/MusicPlayer.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/music/AudioHandler.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/music/AudioListener.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestions/suggestCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="33" column="3" lean-forward="true" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+        <state relative-caret-position="527">
+          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="211" selection-start-line="26" selection-start-column="211" selection-end-line="26" selection-end-column="211" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1054">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/WeGameBot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="33" column="3" selection-start-line="33" selection-start-column="3" selection-end-line="33" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/utils/settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/events/onLeaveEvent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/communication/suggestions/suggestCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="45" column="48" selection-start-line="45" selection-start-column="48" selection-end-line="45" selection-end-column="48" />
+        <state relative-caret-position="170">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -821,25 +828,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/helpCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="52" column="110" selection-start-line="52" selection-start-column="110" selection-end-line="52" selection-end-column="110" />
+        <state relative-caret-position="544">
+          <caret line="39" column="88" selection-start-line="39" selection-start-column="88" selection-end-line="39" selection-end-column="88" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/muteCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="77" column="53" lean-forward="true" selection-start-line="67" selection-start-column="8" selection-end-line="77" selection-end-column="53" />
+        <state relative-caret-position="340">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="33" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commands/info/onlineCommand.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commands/Administration/warnCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="26" column="211" selection-start-line="26" selection-start-column="211" selection-end-line="26" selection-end-column="211" />
+        <state relative-caret-position="1088">
+          <caret line="77" column="53" selection-start-line="67" selection-start-column="8" selection-end-line="77" selection-end-column="53" />
         </state>
       </provider>
     </entry>

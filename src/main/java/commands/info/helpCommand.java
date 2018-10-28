@@ -37,7 +37,7 @@ public class helpCommand extends ListenerAdapter {
         builder.setColor(Color.decode("#e84118"));
         String communicationMsg = (
             "**———————————————————**\n" +
-            "  **" + settings.prefix + "suggest**\n" + "*Opens a channel for suggestions (Staff)*\n" +
+            "  **" + settings.prefix + "suggest**\n" + "*Opens a channel for suggestions*\n" +
             "  **" + settings.prefix + "close**\n" + "*Closes suggestion channel (Staff)*\n" +
             "\n**———————————————————**"
         );

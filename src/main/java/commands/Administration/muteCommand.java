@@ -47,7 +47,7 @@ public class muteCommand extends ListenerAdapter {
                     }
                 }
             } else {
-                e.getChannel().sendMessage("Command came from bot, will not respond.").queue();
+                e.getChannel().sendMessage("Command came from bot or you do not have enough permissions.").queue();
                 return;
             }
         }
